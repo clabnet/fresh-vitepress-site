@@ -1,0 +1,13 @@
+services:
+
+  fresh-doc:
+    image: fresh-doc
+    container_name: fresh-doc
+    restart: unless-stopped
+    ports:
+      - 3020:3000
+
+networks:
+  default:
+    name: horizon_network
+    external: true
